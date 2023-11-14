@@ -1,1 +1,166 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+:root {
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Very_Dark_Blue);
+  font-family: "Overpass", sans-serif;
+}
+
+.box-img {
+  position: relative;
+}
+.box-img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.content-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  overflow: hidden;
+  min-height: 100vh;
+  flex-direction: column;
+  padding: 2rem 1.8rem;
+}
+.container .card {
+  height: 30rem;
+  width: 28.9rem;
+  background-color: #1E252F;
+  border: 1px solid;
+  border-radius: 0.8rem;
+}
+.container .card .Rating_state {
+  transform: scale(1);
+  padding: 2.3rem 1.9rem 2.2rem 2.1rem;
+}
+.container .card .Rating_state .box-img {
+  width: 3.3rem;
+  height: 3.3rem;
+  background-color: var(--Dark_Blue);
+  border-radius: 50%;
+}
+.container .card .Rating_state .box-img img {
+  padding: 1.04rem;
+}
+.container .card .Rating_state .content .Rating_state-title {
+  margin-top: 1.5rem;
+  color: var(--White);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.01rem;
+}
+.container .card .Rating_state .content .Rating_state-paragraph {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: var(--Medium_Grey);
+}
+.container .card .Rating_state .content .container-buttons {
+  margin-top: 2.2rem;
+}
+.container .card .Rating_state .content .container-buttons .box-qualification {
+  display: flex;
+  -moz-column-gap: 1.4rem;
+       column-gap: 1.4rem;
+}
+.container .card .Rating_state .content .container-buttons .box-qualification .button-qualification {
+  width: 3.7rem;
+  height: 3.7rem;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  color: var(--Medium_Grey);
+  background-color: var(--Dark_Blue);
+}
+.container .card .Rating_state .content .container-buttons .box-qualification .button-qualification:hover {
+  cursor: pointer;
+  background-color: var(--Orange);
+  color: var(--White);
+}
+.container .card .Rating_state .content .container-buttons .button {
+  background-color: var(--Orange);
+  color: var(--White);
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.1rem;
+  border: none;
+  margin-top: 2.2rem;
+  border-radius: 3rem;
+  width: 100%;
+  height: 3.35rem;
+}
+.container .card .Rating_state .content .container-buttons .button:hover {
+  background-color: var(--White);
+  color: var(--Orange);
+  font-weight: 700;
+}
+.container .card .Thank_you_state {
+  transform: scale(0);
+  flex-direction: column;
+  padding: 2.9rem 2.2rem 5rem 2.2rem;
+}
+.container .card .Thank_you_state .box-img {
+  width: 12.5rem;
+  height: 8.3rem;
+}
+.container .card .Thank_you_state .content-center {
+  flex-direction: column;
+}
+.container .card .Thank_you_state .content {
+  margin-top: 2.2rem;
+}
+.container .card .Thank_you_state .content .Thank_you_state-title {
+  padding: 0.6rem 1.1rem 0.45rem 1.1rem;
+  border-radius: 3rem;
+  font-size: 1.2rem;
+  color: var(--Orange);
+  opacity: 0.7;
+  background-color: var(--Dark_Blue);
+}
+.container .card .Thank_you_state .content .Thank_you-text {
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.06rem;
+  color: var(--White);
+}
+.container .card .Thank_you_state .content .Thank_you_state-paragraph {
+  margin-top: 1rem;
+  color: var(--Medium_Grey);
+  opacity: 0.6;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+footer .attribution {
+  font-size: 1.1rem;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=style.css.map */

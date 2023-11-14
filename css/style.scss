@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+    // Colors
+
+    // Primary
+    --Orange: hsl(25, 97%, 53%);
+
+    //Neutral
+    --White: hsl(0, 0%, 100%);
+    --Light_Grey: hsl(217, 12%, 63%);
+    --Medium_Grey: hsl(216, 12%, 54%);
+    --Dark_Blue: hsl(213, 19%, 18%);
+    --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Very_Dark_Blue);
+    font-family: 'Overpass', sans-serif;
+}
+
+.box-img{
+    position: relative;
+    img{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }   
+}
+
+.content-center{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container{
+    overflow: hidden;
+    min-height: 100vh;
+    flex-direction: column;
+    padding: 2rem 1.8rem;
+    .card{
+        height: 30rem;
+        width: 28.9rem;
+        background-color: #1E252F;
+        border: 1px solid;
+        border-radius: 0.8rem;
+        .Rating_state{
+            transform: scale(1);
+            padding: 2.3rem 1.9rem 2.2rem 2.1rem;
+            .box-img{
+                width: 3.3rem;
+                height: 3.3rem;
+                background-color: var(--Dark_Blue);
+                border-radius: 50%;
+                img{
+                    padding: 1.04rem;
+                }   
+            }
+            .content{   
+                .Rating_state-title{
+                    margin-top: 1.5rem;
+                    color: var(--White);
+                    font-size: 2rem;
+                    font-weight: 700;
+                    letter-spacing: 0.01rem;
+                }
+                .Rating_state-paragraph{
+                    margin-top: 1rem;
+                    font-size: 1.2rem;
+                    font-weight: 400;
+                    color: var(--Medium_Grey);
+                }
+                .container-buttons{
+                    margin-top: 2.2rem;
+                    .box-qualification{
+                        display: flex;
+                        column-gap: 1.4rem;
+                         .button-qualification{ 
+                            width: 3.7rem;
+                            height: 3.7rem;
+                            font-size: 1.3rem;
+                            border-radius: 50%;
+                            color: var(--Medium_Grey);
+                            background-color: var(--Dark_Blue);
+                            &:hover{
+                                cursor: pointer;
+                                background-color: var(--Orange);
+                                color: var(--White);
+                            }
+                        }
+                    }
+                    .button{
+                        background-color: var(--Orange);
+                        color: var(--White);
+                        text-transform: uppercase;
+                        letter-spacing: 0.2rem;
+                        font-size: 1.1rem;
+                        border:none;
+                        margin-top: 2.2rem;
+                        border-radius: 3rem;
+                        width: 100%;
+                        height: 3.35rem;
+                        &:hover{
+                            background-color: var(--White);
+                            color: var(--Orange);
+                            font-weight: 700;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Thank_you_state{
+            transform: scale(0);
+            flex-direction: column;
+            padding: 2.9rem 2.2rem 5rem 2.2rem;
+            .box-img{
+                width: 12.5rem;
+                height: 8.3rem;
+            }
+            .content-center{
+                flex-direction: column;
+            }
+            .content{
+                margin-top: 2.2rem;
+                .Thank_you_state-title{
+                    padding: 0.6rem 1.1rem 0.45rem 1.1rem;
+                    border-radius:3rem;
+                    font-size: 1.2rem;
+                    color: var(--Orange);
+                    opacity: 0.7;
+                    background-color: var(--Dark_Blue);
+                }
+                .Thank_you-text{
+                    margin-top: 2rem;
+                    font-size: 2rem;
+                    font-weight: 700;
+                    letter-spacing: 0.06rem;
+                    color: var(--White);
+                }
+                .Thank_you_state-paragraph{
+                    margin-top: 1rem;
+                    color: var(--Medium_Grey);
+                    opacity: 0.6;
+                    font-size: 1.2rem;
+                    text-align: center;
+                }
+            }
+            
+        }
+    }
+    
+}
+footer{   
+    .attribution { 
+        font-size: 1.1rem; 
+        text-align: center; 
+    }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); 
+    }
+}
+
+
+
