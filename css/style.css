@@ -90,6 +90,7 @@ body {
        column-gap: 1.4rem;
 }
 .container .card .Rating_state .content .container-buttons .box-qualification .button-qualification {
+  padding-top: 0.3rem;
   width: 3.7rem;
   height: 3.7rem;
   font-size: 1.3rem;
@@ -102,7 +103,12 @@ body {
   background-color: var(--Orange);
   color: var(--White);
 }
+.container .card .Rating_state .content .container-buttons .box-qualification .selecButton {
+  background-color: var(--Medium_Grey);
+  color: var(--White);
+}
 .container .card .Rating_state .content .container-buttons .button {
+  cursor: pointer;
   background-color: var(--Orange);
   color: var(--White);
   text-transform: uppercase;

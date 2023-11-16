@@ -90,6 +90,7 @@ body{
                         display: flex;
                         column-gap: 1.4rem;
                          .button-qualification{ 
+                            padding-top: 0.3rem;
                             width: 3.7rem;
                             height: 3.7rem;
                             font-size: 1.3rem;
@@ -102,8 +103,14 @@ body{
                                 color: var(--White);
                             }
                         }
+                        .selecButton{
+                            background-color: var(--Medium_Grey);  
+                            color: var(--White); 
+                        } 
+                        
                     }
                     .button{
+                        cursor: pointer;
                         background-color: var(--Orange);
                         color: var(--White);
                         text-transform: uppercase;
@@ -160,7 +167,6 @@ body{
                     text-align: center;
                 }
             }
-            
         }
     }
     
