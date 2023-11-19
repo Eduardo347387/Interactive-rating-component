@@ -1,3 +1,9 @@
+
+//Seleccionar contenido de la card
+
+const Rating_state = document.querySelector('.Rating_state')
+const Thank_you_state = document.querySelector('.Thank_you_state')
+
 // Selecciona todos los elementos con la clase 'button-qualification'
 const buttons = document.querySelectorAll('.button-qualification');
 
@@ -8,6 +14,9 @@ const calificacion = document.querySelector('#valor');
 // Declara una variable para almacenar el último botón seleccionado
 let selectedButton;
 
+// Declara variable para almacenar calificacion
+let qualification
+
 // Itera sobre cada botón y agrega un evento de clic a cada uno
 buttons.forEach(element => {
     element.addEventListener('click', calificar);
@@ -15,7 +24,7 @@ buttons.forEach(element => {
 
 // Enviar calificacion
 
-submit.addEventListener('click',enviarCalificacion);
+submit.addEventListener('click', enviarCalificacion);
 
 
 
@@ -28,17 +37,26 @@ function calificar(e) {
     selectedButton = e.target;
 
     // Obtiene la calificación del botón haciendo referencia al atributo 'data-qualification'
-    let qualification = e.target.getAttribute('data-qualification');
+    qualification = e.target.getAttribute('data-qualification');
 
     // Si hay una calificación, togglea la clase 'selecButton' en el botón actual
     if (qualification) {
         selectedButton.classList.toggle('selecButton');
     }
+    
 }
 
 function enviarCalificacion(e){
-    e.preventDefault();
+    if(qualification){
+        e.preventDefault();
+        Rating_state.style.transform = 'scale(0)';
+        Rating_state.style.display = 'none';
+        Thank_you_state.style.transform = 'scale(1)';
+        calificacion.textContent = qualification;
+    }   
+
 }
+
 
 
 function deseleccionarBoton() {

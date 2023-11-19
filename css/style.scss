@@ -22,6 +22,7 @@ html{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: all 0.5s ease-in-out;
 }
 
 body{
@@ -47,6 +48,15 @@ body{
     align-items:center;
 }
 
+// .mostrar{
+//     transform: scale(1);
+// }
+
+// .ocultar{
+//     transform: scale(0);
+//     display: none;
+// }
+
 .container{
     overflow: hidden;
     min-height: 100vh;
@@ -59,7 +69,6 @@ body{
         border: 1px solid;
         border-radius: 0.8rem;
         .Rating_state{
-            transform: scale(1);
             padding: 2.3rem 1.9rem 2.2rem 2.1rem;
             .box-img{
                 width: 3.3rem;
