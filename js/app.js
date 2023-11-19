@@ -54,7 +54,6 @@ function enviarCalificacion(e){
         Thank_you_state.style.transform = 'scale(1)';
         calificacion.textContent = qualification;
     }   
-
 }
 
 
